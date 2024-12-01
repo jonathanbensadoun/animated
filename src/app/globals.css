@@ -19,3 +19,29 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* styles/tailwind-animations.css */
+.fadeIn {
+  @apply transition-opacity opacity-0;
+}
+
+.slideUp {
+  @apply transition-transform opacity-0 transform translate-y-12;
+}
+
+.zoomIn {
+  @apply transition-transform transform scale-75 opacity-0;
+}
+
+.rotateIn {
+  @apply transition-transform transform rotate-180 opacity-0;
+}
+.animate {
+  opacity: 1 !important;
+}
+.bounceIn {
+  @apply transition-transform transform scale-90 opacity-0;
+}
+
+.animate {
+  @apply opacity-100 transform translate-y-0 scale-100 rotate-0;
+}
